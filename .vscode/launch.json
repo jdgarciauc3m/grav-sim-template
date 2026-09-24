@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Wrong number of arguments",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "args": ["100", "1000", "500"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Invalid iterations",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "args": ["0", "1000", "2000", "0.25"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Single iteration",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "args": ["1", "1000", "2000", "0.25"],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
